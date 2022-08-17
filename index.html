@@ -7,7 +7,7 @@
   </head>
   <body style="text-align: center">
     <canvas id="unity-canvas" width=960 height=600 style="width: 960px; height: 600px; background: #231F20"></canvas>
-    <script src="Build/WebGL Builds.loader.js"></script>
+    <script src="Build/webgltest.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -18,9 +18,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/WebGL Builds.data.br",
-        frameworkUrl: "Build/WebGL Builds.framework.js.br",
-        codeUrl: "Build/WebGL Builds.wasm.br",
+        dataUrl: "Build/webgltest.data.br",
+        frameworkUrl: "Build/webgltest.framework.js.br",
+        codeUrl: "Build/webgltest.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "webgl",
